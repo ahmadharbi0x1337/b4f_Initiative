@@ -1,27 +1,68 @@
-*{
-    box-sizing: border-box;
-    font-family: sans-serif;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-color: #e82d2d;
+  --secondary-color: #a54949;
+  --background-color: #975050;
 }
 
-body{
-    background-color: #d8d7d7;
+body {
+  background-color: var(--background-color);
 }
 
-
-form{
-    background-color: #cecece;
-    min-width: 300px;
-    min-height: 300px;
-    margin: 50px auto;
+form {
+  background-color: var(--secondary-color);
+  min-width: 300px;
+  min-height: 300px;
+  margin: 50px auto;
+  height: calc(100vh - 100px);
+}
+fieldset {
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  margin: 20px;
+  padding: 50px;
+  box-shadow: 0px 0px 5px var(--primary-color);
+}
+legend {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  /* box-shadow: 0px 0px 5px var(--primary-color); */
+}
+.username,
+.gender {
+  padding: 25px;
+}
+label {
+  margin-right: 10px;
+  min-width: 100px;
+  text-align: right;
+  margin-top: 65px;
+}
+input {
+  outline: none;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  min-width: 100px;
+  min-height: 50px;
+  margin-top: 10px;
+}
+input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0px 0px 5px var(--primary-color);
 }
 
-.username{
-    
-}
-input{
-    border: 1px solid #464444;
-    border-radius: 5px;
+input[type="submit"] {
+  border: 1px solid var(--primary-color);
+  min-width: 100px;
+  min-height: 30px;
+  margin: auto;
+  text-align: center;
 }
