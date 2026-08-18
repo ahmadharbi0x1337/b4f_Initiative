@@ -7,11 +7,13 @@
       Demo Practice, of HTML Forms and How To Collection on W3School
     </title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="/public/dev-icon-146.svg" />
   </head>
   <body>
-    <!-- #region Login Form/Transofored To Hypothetical Survey -->
+    <!-- #region Login Form/ Transformed To Hypothetical Survey -->
+
     <!--  Original Snippet(s): https://www.w3schools.com/howto/howto_css_login_form.asp, With Some Modifications -->
-    <form method="post">
+    <!-- <form method="post">
       <fieldset>
         <legend>Survey To Improve User Experience</legend>
         <legend>User Information</legend>
@@ -47,12 +49,300 @@
           <textarea name="feedback" placeholder="Your feedback here..." required></textarea>
       </fieldset>
       <input type="submit" value="Login" />
-    </form>
+    </form> -->
     <!-- Summary of Modifications:  
- - Replaceed b tage with semantic strong tag
+ - Replaced b tag with semantic strong tag
  - Added fieldset and legend and container divs for better structure and accessibility for each label & input pair
  - Added required attribute to input fields for basic validation
   -->
+    <!-- #endregion -->
+    <!-- #region Simple Portfolio -->
+
+    <!-- Main Navigation Header -->
+    <header>
+      <a href="#hero"><img src="/public/dev-icon-146.svg" alt="dev icon" /></a>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="/ar.html">Ar</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero">
+        <header>
+          <h1>Ahmad Alharbi</h1>
+          <p>Full-Stack Software Engineer</p>
+        </header>
+        <p>
+          I build scalable web applications and resilient backend systems using
+          modern Web technologies.
+        </p>
+        <div>
+          <a href="#projects">View Projects</a>
+          <a href="#contact">Get In Touch</a>
+          <a href="/public/resume.pdf" download>Download Resume</a>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I am a software engineer focused on building clean, efficient, and
+          user-centric web applications. With experience across both frontend
+          and backend development, I enjoy solving complex architecture problems
+          and optimizing system performance.
+        </p>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills">
+        <h2>Technical Skills</h2>
+
+        <section>
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML5 &amp; CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>TypeScript</li>
+            <li>React</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Python</li>
+            <li>RESTful APIs</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Databases &amp; Cloud</h3>
+          <ul>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>Docker</li>
+            <li>AWS</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Developer Tools</h3>
+          <ul>
+            <li>Git &amp; GitHub</li>
+            <li>Linux</li>
+            <li>CI/CD Pipelines</li>
+            <li>Jest</li>
+          </ul>
+        </section>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects">
+        <h2>Featured Projects</h2>
+
+        <!-- Project Card 1 -->
+        <article>
+          <header>
+            <h3>LeetCode-Saga</h3>
+            <p>First Part of LeetCode Problem Solving Documentation</p>
+          </header>
+
+          <figure>
+            <img src="/public/leetcode-128px.png" alt="leetcode icon" />
+            <figcaption>
+              40+ Documented Solution with Approaches, Notes, and Personal
+              Perspective
+            </figcaption>
+          </figure>
+
+          <p>
+            A documented Series of Problem Solving, in JavaScript, Bash, and
+            MySQL
+          </p>
+
+          <h4>Technologies Used</h4>
+          <ul>
+            <li>JavaScript</li>
+            <li>Bash</li>
+            <li>MySQL</li>
+          </ul>
+
+          <footer>
+            <a
+              href="https://github.com/ahmadharbi0x1337/leetcode_-1"
+              target="_blank"
+              >Source Code</a
+            >
+          </footer>
+        </article>
+
+        <!-- Project Card 2 -->
+        <article>
+          <header>
+            <h3>HTTP Server</h3>
+            <p>Code To Learn Project</p>
+          </header>
+
+          <figure>
+            <img
+              src="/public/aws-res-aws-iot-http-protocol-64px.png"
+              alt="http icon"
+            />
+            <figcaption>
+              Sockets, Logging, MIME Types, SSL, CTX, and Static File Serving
+            </figcaption>
+          </figure>
+
+          <p>
+            A personal code to learn project, ai-paired programming, to learn
+            how an http server works under the hood
+          </p>
+
+          <h4>Technologies Used</h4>
+          <ul>
+            <li>C</li>
+            <li>Makefile</li>
+            <li>GCC</li>
+          </ul>
+
+          <footer>
+            <a
+              href="https://github.com/ahmadharbi0x1337/https_server"
+              target="_blank"
+              >Source Code</a
+            >
+          </footer>
+        </article>
+
+        <!-- Project Card 3 -->
+        <article>
+          <header>
+            <h3>To-Do List With E2E and Auth</h3>
+            <p>Full-Stack self-hosted web application</p>
+          </header>
+
+          <figure>
+            <img
+              src="/public/todo_pen_and_paper_1731502227.svg"
+              alt="todo icon"
+            />
+            <figcaption>Encryption For Your Notes</figcaption>
+          </figure>
+
+          <p>
+            self-hosted web app with encryption for stored notes, simple auth
+            system, and protected routes.
+          </p>
+
+          <h4>Technologies Used</h4>
+          <ul>
+            <li>Flask</li>
+            <li>SqlAlchemy</li>
+            <li>Sqlite3</li>
+            <li>Bootstrap</li>
+          </ul>
+
+          <footer>
+            <a
+              href="https://github.com/ahmadharbi0x1337/encrypted-notes"
+              target="_blank"
+              >Source Code</a
+            >
+          </footer>
+        </article>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Get In Touch</h2>
+        <p>
+          I am currently open to full-stack engineering opportunities. Feel free
+          to reach out via email or connect with me on professional channels.
+        </p>
+
+        <ul>
+          <li>
+            <a href="mailto:ahmadharbi0x1337@gmail.com">
+              <span>Email</span>
+              <img src="/public/minutemailer.svg" alt="email icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/ahmadharbi0x1337" target="_blank">
+              <span>GitHub</span>
+              <img
+                class="github-styles"
+                src="/public/github.svg"
+                alt="github icon"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/ahmad-alharbi-0010502b0/"
+              target="_blank"
+            >
+              <span>LinkedIn</span>
+              <img src="/public/linkedin.svg" alt="linkedin icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://leetcode.com/u/ahmadharbi0x1337/" target="_blank">
+              <span>LeetCode</span>
+              <img src="/public/leetcode-128px.png" alt="leetcode icon"
+            /></a>
+          </li>
+        </ul>
+
+        <!-- Standard Contact Form -->
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Get in Touch</legend>
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div>
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+
+            <div>
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+          </fieldset>
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+
+    <!-- Site Footer -->
+    <footer>
+      <p>&copy; 2026 Ahmad Alharbi. All rights reserved.</p>
+      <p><a href="#hero">Back to Top</a></p>
+    </footer>
+
     <!-- #endregion -->
   </body>
 </html>
