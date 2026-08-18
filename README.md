@@ -1,2 +1,3 @@
 # b4f_Initiative
-a Repo Containing a timeline demos of hands-on and tutorials in the generous bytes4future initiative
+
+a Repo of 2026 August 18 HTML Demo
