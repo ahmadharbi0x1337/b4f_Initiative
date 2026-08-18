@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Demo Practice, of HTML Forms and How To Collection on W3School</title>
+    <link rel='stylesheet' href='styles.css'>
+
+</head>
+<body>
+    <!-- #region Login Form -->
+    <!--  Credits Goes To: https://www.w3schools.com/howto/howto_css_login_form.asp, With Some Modifications -->
+      <form action="action_page.php" method="post">
+        <fieldset>
+          <legend>Login Form</legend>
+            <div class="username">
+              <label for="uname"><strong>Username</strong></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+            </div>
+            <div class="password">
+              <label for="psw"><strong>Password</strong></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          </div>
+        </fieldset>
+        <input type="submit" value="Login">
+      </form>
+<!-- Summary of Modifications:  
+ - Replaceed b tage with semantic strong tag
+ - Added fieldset and legend and container divs for better structure and accessibility for each label & input pair
+ - Added required attribute to input fields for basic validation
+  -->
+      <!-- #endregion -->
+</body>
+</html>
